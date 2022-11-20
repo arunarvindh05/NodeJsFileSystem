@@ -15,6 +15,6 @@ fs.readdir("Pfolders", function (err, files) {
     files.forEach(function (file) {
         console.log(file); 
         var fil = fs.readFileSync("Pfolders/"+file,'utf-8');//reading text file
-        console.log(fil)
+        console.log("Reading data: "+fil)
     });
 });
